@@ -31,7 +31,8 @@ director:{$eq:"Maurice Tourneur"}
 {runtime:{$gte:80}}
 ]}
 
-{&and:[
-{name:{$eq:"Elijah"}},
-{age:}
+{$and:[
+{name:"Elijah"},
+{age:{$gte:30}}, 
+{age:{$lte:50}}
 ]}
