@@ -1,38 +1,5 @@
-{$and:[
-{$genre:{$eq:"Western"}},
-{$genre:{$eq:"Western"}}
-]}
-
-{$and:[
-{metacritic:{$gte:80}},
-{metacritic:{$lte:90}}
-]}
-
-{$and:[
-genre:{$eq:"Drama"}},
-metacritic:{$gt:90}},
-director:{$eq:"Maurice Tourneur"}
-]}
-
-{$and:[
-  {genre:{$eq:"Drama"}},
-	{&or:{	{metacritic:{$gt:90}},
-  		{director:{$eq:"Maurice Tourneur"}}
-	}}
-  
-]}
-
-{$and:[
-	{$or:[
-	{genre:{$eq:"Drama"}},
-	{genre:{$eq:"Action"}},
-	]},
-{directors:{$regex:/^G/}},
-{runtime:{$gte:80}}
-]}
-
-{$and:[
-{name:"Elijah"},
-{age:{$gte:30}}, 
-{age:{$lte:50}}
+{$and: {[
+{name:{$eq:"Elijah"}},
+{friends:{$ne:"Jack"}},
+{age:{$ne:97}}   	
 ]}
