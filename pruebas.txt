@@ -1,5 +1,8 @@
-{$and: {[
-{name:{$eq:"Elijah"}},
-{friends:{$ne:"Jack"}},
-{age:{$ne:97}}   	
+{$and:[
+	{$or:[
+	{genres:"Drama"},
+	{genres:"Action"}
+	]},
+	{director:{$regex:/G^/}},
+	{runtime:{$gte:80}}	
 ]}
