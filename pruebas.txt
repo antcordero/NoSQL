@@ -1,8 +1,8 @@
 {$and:[
-	{$or:[
-	{genres:"Drama"},
-	{genres:"Action"}
-	]},
-	{director:{$regex:/G^/}},
-	{runtime:{$gte:80}}	
+	{id:{$nin:[5, 10, 15, 20]}},
+	{id:{$lte:20}},
+	{$and:[
+		{age:{$in:[81, 82, 83, 84, 86, 87, 88, 89]}},
+	]}
+	
 ]}
