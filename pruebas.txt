@@ -1,8 +1,6 @@
 {$and:[
-	{id:{$nin:[5, 10, 15, 20]}},
-	{id:{$lte:20}},
-	{$and:[
-		{age:{$in:[81, 82, 83, 84, 86, 87, 88, 89]}},
-	]}
-	
+	{lastupdated:{$regex:/-02-/}},
+	{directors:{$in:["King Vidor", "Sidney Franklin"]}}
 ]}
+
+
